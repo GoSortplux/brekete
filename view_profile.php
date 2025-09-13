@@ -109,7 +109,10 @@ if (!empty($company_whatsapp)) {
                         <button class="save-contact-btn" onclick="saveContact()">Save Contact</button>
                         <?php if (!empty($verification_link)) : ?>
                             <a href="<?php echo htmlspecialchars($verification_link); ?>" target="_blank" class="verify-staff-btn">
-                                <i class="fas fa-user-check"></i>
+                                <span class="icon-box">
+                                    <i class="fas fa-user-check"></i>
+                                </span>
+                                <span class="text">Verify Staff</span>
                             </a>
                         <?php endif; ?>
                     </div>
