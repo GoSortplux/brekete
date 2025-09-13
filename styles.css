@@ -354,13 +354,14 @@ body.dark-mode .social-links a, body.dark-mode .contact-links a {
 .verify-staff-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
     background: #007bff;
     color: #fff !important;
-    padding: 0.5rem 1rem;
     border-radius: 6px;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     transition: background 0.3s ease, transform 0.3s ease;
     animation: pulse 2s infinite;
 }
