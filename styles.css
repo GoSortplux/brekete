@@ -146,6 +146,10 @@ body.dark-mode .nav-menu li a {
 }
 
 /* Menu Trigger */
+.menu-toggle {
+    display: none;
+}
+
 .menu-trigger {
     position: fixed;
     top: 15px;
@@ -344,6 +348,24 @@ body.dark-mode .social-links a, body.dark-mode .contact-links a {
 
 .save-contact-btn:hover {
     background: #218838;
+    transform: scale(1.05);
+}
+
+.verify-staff-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #007bff;
+    color: #fff !important;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.verify-staff-btn:hover {
+    background: #0056b3;
     transform: scale(1.05);
 }
 
