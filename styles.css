@@ -335,6 +335,10 @@ body.dark-mode .social-links a, body.dark-mode .contact-links a {
     pointer-events: none;
 }
 
+.contact-links > * {
+    flex-shrink: 0; /* Prevent items from shrinking, force them to wrap */
+}
+
 .save-contact-btn {
     background: #28a745;
     color: #fff !important; /* Ensure text is visible */
