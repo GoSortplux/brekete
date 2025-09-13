@@ -67,7 +67,7 @@ $users = read_json('data/users.json');
 
     <main class="main-content">
         <section class="dashboard-section">
-            <h1>Team Dashboard</h1>
+            <h1>Staff Dashboard</h1>
             <div class="masonry-grid">
                 <?php if (empty($users)) { ?>
                     <p>No team members found.</p>
