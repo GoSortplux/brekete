@@ -25,6 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $company = read_json('data/company_info.json');
         $company['company_name'] = $_POST['company_name'];
         $company['address'] = $_POST['address'] ?? '';
+        $company['whatsapp_number'] = $_POST['whatsapp_number'] ?? '';
         if (isset($_FILES['logo']) && $_FILES['logo']['error'] === UPLOAD_ERR_OK) {
             $logo = $_FILES['logo'];
             $file_name = uniqid() . "_" . basename($logo['name']);
@@ -180,6 +181,9 @@ $users = read_json('data/users.json');
                             </label>
                             <label>Address:
                                 <textarea name="address"><?php echo htmlspecialchars($company['address'] ?? ''); ?></textarea>
+                            </label>
+                            <label>WhatsApp Number:
+                                <input type="text" name="whatsapp_number" value="<?php echo htmlspecialchars($company['whatsapp_number'] ?? ''); ?>">
                             </label>
                             <label>Logo:
                                 <input type="file" name="logo">
