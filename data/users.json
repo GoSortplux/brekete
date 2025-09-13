@@ -1,0 +1,71 @@
+[
+    {
+        "id": 1,
+        "username": "admin",
+        "password": "$2y$10$NDrjR72e9l4xYJKunVYIL.phFok3NuGwYM2z7KRPpb62I3ZyybNP2",
+        "role": "admin",
+        "full_name": "Omolewu Emmanuel Dada",
+        "job_title": "IT Administrator",
+        "about": "I am a passionate software engineer.",
+        "profile_photo": "dnet.jpg",
+        "social_links": {
+            "twitter": "",
+            "linkedin": "",
+            "github": "",
+            "facebook": "",
+            "instagram": ""
+        },
+        "email": "itadmin@glisteninternationalacademy.com",
+        "phone_number": "+2348129147075",
+        "whatsapp_number": "+2348129147075",
+        "qualifications": [],
+        "experience": [],
+        "certifications": []
+    },
+    {
+        "id": 2,
+        "username": "CTO",
+        "password": "$2y$10$2O1DIKDAIX6cCsC\/tFfibu7LOP7F8zZzRqvvnDX0okpXk6uBS93JC",
+        "role": "user",
+        "full_name": "STEPHEN AYOMIDE IBITOYE",
+        "job_title": "Chief Technology Officer",
+        "about": "",
+        "profile_photo": "68889ea23b2ff_stephen.jpg",
+        "social_links": {
+            "twitter": "",
+            "linkedin": "",
+            "github": "",
+            "facebook": "",
+            "instagram": ""
+        },
+        "email": "",
+        "phone_number": "",
+        "whatsapp_number": "",
+        "qualifications": [],
+        "experience": [],
+        "certifications": []
+    },
+    {
+        "id": 3,
+        "username": "COO",
+        "password": "$2y$10$Kj3cBTvhmUJdzY3CLvFuhufRkh1gt6abhkLqcy8trG1Wo0EcJlBEO",
+        "role": "user",
+        "full_name": "ABIOLA AHMED",
+        "job_title": "Chief Operating Officer",
+        "about": "",
+        "profile_photo": "68889e85a3a63_abiola.png",
+        "social_links": {
+            "twitter": "",
+            "linkedin": "",
+            "github": "",
+            "facebook": "",
+            "instagram": ""
+        },
+        "email": "",
+        "phone_number": "",
+        "whatsapp_number": "",
+        "qualifications": [],
+        "experience": [],
+        "certifications": []
+    }
+]
