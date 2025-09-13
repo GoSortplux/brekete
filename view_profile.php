@@ -20,6 +20,14 @@ if (!empty($whatsapp_number)) {
     $whatsapp_number = preg_replace('/[^0-9+]/', '', $whatsapp_number);
     $whatsapp_link = "https://wa.me/" . $whatsapp_number;
 }
+
+// Prepare staff verification link
+$company_whatsapp = $company['whatsapp_number'] ?? '';
+$verification_link = '';
+if (!empty($company_whatsapp)) {
+    $message = "Please confirm this person is your staff, " . $user['full_name'];
+    $verification_link = "https://wa.me/" . preg_replace('/[^0-9+]/', '', $company_whatsapp) . "?text=" . urlencode($message);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -99,6 +107,11 @@ if (!empty($whatsapp_number)) {
                         <a href="mailto:<?php echo htmlspecialchars($user['email'] ?? ''); ?>"><i class="fas fa-envelope"></i></a>
                         <a href="tel:<?php echo htmlspecialchars($user['phone_number'] ?? ''); ?>"><i class="fas fa-phone"></i></a>
                         <button class="save-contact-btn" onclick="saveContact()">Save Contact</button>
+                        <?php if (!empty($verification_link)) : ?>
+                            <a href="<?php echo htmlspecialchars($verification_link); ?>" target="_blank" class="verify-staff-btn">
+                                <i class="fas fa-user-check"></i> Verify Staff
+                            </a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
