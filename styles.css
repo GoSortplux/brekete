@@ -146,11 +146,11 @@ body.dark-mode .nav-menu li a {
 }
 
 /* Menu Trigger */
-.menu-toggle {
+input.menu-toggle {
     display: none;
 }
 
-.menu-trigger {
+label.menu-trigger {
     position: fixed;
     top: 15px;
     left: 15px;
@@ -163,7 +163,7 @@ body.dark-mode .nav-menu li a {
     z-index: 2000;
 }
 
-body.dark-mode .menu-trigger {
+body.dark-mode label.menu-trigger {
     background: rgba(0, 0, 0, 0.3);
 }
 
@@ -362,6 +362,7 @@ body.dark-mode .social-links a, body.dark-mode .contact-links a {
     text-decoration: none;
     font-size: 0.9rem;
     transition: background 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
 }
 
 .verify-staff-btn:hover {
@@ -931,5 +932,20 @@ body.light-mode .footer {
         width: 40px;
         height: 40px;
         font-size: 1.2rem;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px 20px rgba(0, 123, 255, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
     }
 }
