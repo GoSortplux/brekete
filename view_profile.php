@@ -25,7 +25,7 @@ if (!empty($whatsapp_number)) {
 $company_whatsapp = $company['whatsapp_number'] ?? '';
 $verification_link = '';
 if (!empty($company_whatsapp)) {
-    $message = "Please confirm this person is your staff, " . $user['full_name'];
+    $message = "Please confirm this person, " . $user['full_name'] . ", is your staff at " . $company['company_name'] . ".";
     $verification_link = "https://wa.me/" . preg_replace('/[^0-9+]/', '', $company_whatsapp) . "?text=" . urlencode($message);
 }
 ?>
@@ -109,7 +109,7 @@ if (!empty($company_whatsapp)) {
                         <button class="save-contact-btn" onclick="saveContact()">Save Contact</button>
                         <?php if (!empty($verification_link)) : ?>
                             <a href="<?php echo htmlspecialchars($verification_link); ?>" target="_blank" class="verify-staff-btn">
-                                <i class="fas fa-user-check"></i> Verify Staff
+                                <i class="fas fa-user-check"></i>
                             </a>
                         <?php endif; ?>
                     </div>
